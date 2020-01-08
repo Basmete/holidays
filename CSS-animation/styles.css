@@ -1,0 +1,265 @@
+.field {
+  position: relative;
+  background: rgb(135, 211, 230);
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.sky {
+  position: relative;
+  background: linear-gradient(#e66465, #9198e5);
+  height: 350px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+
+  background: transparent;
+  background-image: url("snowflake.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  animation: snowing 50s linear 0s;
+}
+
+@keyframes snowing {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: translate(40px, 40px) rotate(40deg);
+  }
+  20% {
+    transform: translate(0px, 80px) rotate(80deg);
+  }
+  30% {
+    transform: translate(40px, 120px) rotate(120deg)
+  }
+  40% {
+    transform: translate(0px, 160px) rotate(160deg)
+  }
+  50% {
+    transform: translate(40px, 200px) rotate(200deg)
+  }
+  60% {
+    transform: translate(0px, 240px) rotate(240deg)
+  }
+  70% {
+    transform: translate(40px, 280px) rotate(280deg)
+  }
+  80% {
+    transform: translate(0px, 320px) rotate(320deg)
+  }
+  90% {
+    transform: translate(40px, 360px) rotate(360deg)
+  }
+  100% {
+    transform: translate(0px, 400px) rotate(400deg);
+  }
+}
+
+.snow-2 {
+  left: 80px;
+}
+.snow-3 {
+  left: 160px;
+}
+.snow-4 {
+  left: 240px;
+}
+.snow-5 {
+  left: 320px;
+}
+.snow-6 {
+  left: 400px;
+}
+
+.snow-7 {
+  left: 40px;
+  top: 40px;
+}
+.snow-8 {
+  left: 120px;
+  top: 40px;
+}
+.snow-9 {
+  left: 200px;
+  top: 40px;
+}
+.snow-10 {
+  left: 280px;
+  top: 40px;
+}
+.snow-11 {
+  left: 360px;
+  top: 40px;
+}
+.snow-12 {
+  left: 440px;
+  top: 40px;
+}
+
+.cloud {
+  position: absolute;
+
+  width: 100px;
+  height: 40px;
+
+  background: transparent;
+  background-image: url("cloud.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  animation: cloud-move 20s cubic-bezier(.5, -1, .5, 2);
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud-move {
+  0% {
+    transform: translate(-100px);
+  }
+  50% {
+    transform: translate(150px) scale(1.2) ;
+  }
+  100% {
+    transform: translateX(400px) scale(1);
+  }
+}
+
+.cloud-2 {
+  top: 40px;
+}
+
+.cloud-3 {
+  top: 20px;
+  left: 70px;
+}
+
+.car {
+  position: absolute;
+  bottom: -10px;
+
+  width: 100px;
+  height: 50px;
+
+  background: transparent;
+  background-image: url("car.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  animation: car-moving 10s linear 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes car-moving {
+  0% {
+    transform: translate(-150px);
+  }
+  100% {
+    transform: translate(500px);
+  }
+}
+
+.sun {
+  position: absolute;
+  right: 50px;
+  top: 0;
+
+  width: 120px;
+  height: 120px;
+
+  background: transparent;
+  background-image: url("sun.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  animation: sun 10s linear 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.river {
+  position: absolute;
+  right: 50px;
+  bottom: -100px;
+
+  width: 350px;
+  height: 350px;
+
+  background: transparent;
+  background-image: url("river.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.fish {
+  position: absolute;
+  left: 70px;
+  top: 160px;
+
+  width: 50px;
+  height: 50px;
+
+  background: transparent;
+  background-image: url("fish.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  animation: fish 6s linear 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fish {
+  0% {
+    transform: scale(-1, 1);
+  }
+
+
+  50% {
+    transform: translateX(190px) scale(-1, 1);
+  }
+  55% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.snowman {
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+
+  width: 150px;
+  height: 150px;
+
+  background: transparent;
+  background-image: url("snowman.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+
+}
